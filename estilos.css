@@ -1,0 +1,353 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f6fb;
+    color: #24324a;
+}
+
+/* MENU PRINCIPAL */
+header {
+    background: #101d35;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px #0002;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #dce6f5;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #64d7e7;
+}
+
+/* PORTADA */
+.portada {
+    min-height: 470px;
+    background: linear-gradient(120deg, #101d35, #1e4478);
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+}
+
+.portada-contenido {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #64d7e7;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.portada h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.portada h1 span {
+    color: #64d7e7;
+}
+
+.portada-contenido > p:not(.subtitulo) {
+    color: #d1dced;
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 25px;
+    background: #64d7e7;
+    color: #101d35;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+/* INTRODUCCIÓN */
+.introduccion {
+    max-width: 1000px;
+    margin: 65px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.introduccion h2 {
+    color: #17345d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    color: #68768a;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+/* SECCIONES DE EJERCICIOS */
+.ejercicios {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px #172c4a0c;
+    border: 1px solid #e5ebf3;
+    scroll-margin-top: 100px;
+    transition: 0.3s;
+}
+
+.ejercicios:hover {
+    box-shadow: 0 12px 30px #172c4a18;
+    transform: translateY(-3px);
+}
+
+.titulo-ejercicio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5ebf3;
+    padding-bottom: 20px;
+}
+
+.titulo-ejercicio span {
+    background: #e5f5fa;
+    color: #167d9c;
+    padding: 12px 16px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.titulo-ejercicio h2 {
+    color: #17345d;
+    font-size: 25px;
+}
+
+/* CONTENIDO: TEXTO E IMAGEN */
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.explicacion h3 {
+    color: #2864b4;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.explicacion p {
+    color: #64738a;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+}
+
+.explicacion h4 {
+    color: #17345d;
+    margin: 15px 0 7px;
+}
+
+/* FORMULAS */
+.formula {
+    background: #edf4ff;
+    color: #245bb0;
+    border-left: 4px solid #3478d4;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0;
+    overflow-wrap: anywhere;
+}
+
+/* IMAGENES */
+.grafica {
+    background: #f5f8fc;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.grafica h3 {
+    color: #17345d;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.grafica img {
+    width: 100%;
+    height: 290px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.grafica img:hover {
+    transform: scale(1.025);
+}
+
+/* CONCLUSIÓN */
+.conclusion {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.conclusion h2 {
+    color: #17345d;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conclusion p {
+    color: #68768a;
+    line-height: 1.9;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #101d35;
+    color: #dce6f5;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #64d7e7;
+    text-decoration: none;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 750px) {
+
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .portada {
+        min-height: 400px;
+        padding: 60px 7%;
+    }
+
+    .portada h1 {
+        font-size: 45px;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .ejercicios {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .titulo-ejercicio h2 {
+        font-size: 20px;
+    }
+
+    .grafica img {
+        height: 240px;
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* ANIMACIÓN DE APARICIÓN */
+
+.introduccion,
+.ejercicios,
+.conclusion {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.introduccion.visible,
+.ejercicios.visible,
+.conclusion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* IMAGEN AMPLIADA */
+
+.grafica img {
+    cursor: zoom-in;
+}
+
+.grafica img.imagen-grande {
+    transform: scale(1.05);
+    cursor: zoom-out;
+    box-shadow: 0 8px 25px #172c4a30;
+}
+
+/* ENLACE ACTIVO */
+
+nav a.activo {
+    color: #64d7e7;
+    font-weight: bold;
+}

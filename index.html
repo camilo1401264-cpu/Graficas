@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos Direccionales</title>
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header>
+        <div class="logo">∿ CAMPOS DIRECCIONALES</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#ejercicio1">Ejercicio 1</a>
+            <a href="#ejercicio2">Ejercicio 2</a>
+            <a href="#ejercicio3">Ejercicio 3</a>
+            <a href="#ejercicio4">Ejercicio 4</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+        <div class="portada-contenido">
+            <p class="subtitulo">ACTIVIDAD 2.2.2.1</p>
+
+            <h1>Campos<br>
+                <span>Direccionales</span>
+            </h1>
+
+            <p>
+                Representación gráfica y análisis de cuatro
+                modelos mediante ecuaciones diferenciales.
+            </p>
+
+            <a href="#ejercicio1" class="boton">
+                Ver ejercicios ↓
+            </a>
+        </div>
+    </section>
+
+    <!-- INTRODUCCION -->
+    <section class="introduccion">
+        <h2>¿Qué es un campo direccional?</h2>
+
+        <p>
+            Un campo direccional es una representación gráfica
+            que utiliza pequeños segmentos para mostrar la
+            pendiente de las soluciones de una ecuación
+            diferencial en diferentes puntos del plano.
+        </p>
+    </section>
+
+    <!-- EJERCICIO 1 -->
+    <section class="ejercicios" id="ejercicio1">
+
+        <div class="titulo-ejercicio">
+            <span>01</span>
+            <h2>Difusión de calor</h2>
+        </div>
+
+        <div class="contenido">
+            <div class="explicacion">
+                <h3>Ley de enfriamiento de Newton</h3>
+
+                <div class="formula">
+                    dT/dt = -k(T - Tamb)
+                </div>
+
+                <p>
+                    Este modelo describe cómo cambia la temperatura
+                    de un cuerpo al intercambiar calor con el ambiente.
+                </p>
+
+                <h4>Variables</h4>
+                <p>
+                    T: temperatura del cuerpo.<br>
+                    Tamb: temperatura ambiente.<br>
+                    k: constante de enfriamiento.
+                </p>
+
+                <h4>Interpretación</h4>
+                <p>
+                    Cuando el cuerpo está más caliente que el ambiente,
+                    su temperatura disminuye progresivamente hasta
+                    aproximarse a la temperatura ambiental.
+                </p>
+            </div>
+
+            <div class="grafica">
+                <h3>Campo direccional 01</h3>
+                <img src="imagenes/1.png" alt="Gráfica del ejercicio 1">
+            </div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 2 -->
+    <section class="ejercicios" id="ejercicio2">
+
+        <div class="titulo-ejercicio">
+            <span>02</span>
+            <h2>Flujo en tubería horizontal</h2>
+        </div>
+
+        <div class="contenido">
+            <div class="explicacion">
+                <h3>Velocidad del fluido</h3>
+
+                <div class="formula">
+                    dv/dx = -(f/2D) v|v|
+                </div>
+
+                <p>
+                    Esta ecuación representa el cambio de velocidad
+                    de un fluido que circula por una tubería horizontal,
+                    considerando el efecto de la fricción.
+                </p>
+
+                <h4>Variables</h4>
+                <p>
+                    v: velocidad del fluido.<br>
+                    f: coeficiente de fricción.<br>
+                    D: diámetro de la tubería.
+                </p>
+
+                <h4>Interpretación</h4>
+                <p>
+                    La fricción se opone al movimiento del fluido,
+                    provocando una variación en su velocidad.
+                </p>
+            </div>
+
+            <div class="grafica">
+                <h3>Campo direccional 02</h3>
+                <img src="imagenes/2.png" alt="Gráfica del ejercicio 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 3 -->
+    <section class="ejercicios" id="ejercicio3">
+
+        <div class="titulo-ejercicio">
+            <span>03</span>
+            <h2>Movimiento bajo fricción lineal</h2>
+        </div>
+
+        <div class="contenido">
+            <div class="explicacion">
+                <h3>Movimiento de una partícula</h3>
+
+                <div class="formula">
+                    dv/dt = -bv + F
+                </div>
+
+                <p>
+                    Describe el movimiento de una partícula sometida
+                    a una fuerza constante y a una fuerza de fricción
+                    proporcional a su velocidad.
+                </p>
+
+                <h4>Variables</h4>
+                <p>
+                    v: velocidad.<br>
+                    b: constante de fricción.<br>
+                    F: fuerza constante.
+                </p>
+
+                <h4>Interpretación</h4>
+                <p>
+                    La velocidad tiende a estabilizarse cuando
+                    la fuerza aplicada y la fricción alcanzan
+                    un equilibrio.
+                </p>
+            </div>
+
+            <div class="grafica">
+                <h3>Campo direccional 03</h3>
+                <img src="imagenes/3.png" alt="Gráfica del ejercicio 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- EJERCICIO 4 -->
+    <section class="ejercicios" id="ejercicio4">
+
+        <div class="titulo-ejercicio">
+            <span>04</span>
+            <h2>Crecimiento poblacional logístico</h2>
+        </div>
+
+        <div class="contenido">
+            <div class="explicacion">
+                <h3>Modelo de crecimiento logístico</h3>
+
+                <div class="formula">
+                    dN/dt = rN(1 - N/K)
+                </div>
+
+                <p>
+                    Este modelo representa el crecimiento de una
+                    población considerando que los recursos del
+                    ambiente son limitados.
+                </p>
+
+                <h4>Variables</h4>
+                <p>
+                    N: población.<br>
+                    r: tasa de crecimiento.<br>
+                    K: capacidad máxima.
+                </p>
+
+                <h4>Interpretación</h4>
+                <p>
+                    La población aumenta y posteriormente se aproxima
+                    a un límite máximo determinado por la capacidad
+                    del entorno.
+                </p>
+            </div>
+
+            <div class="grafica">
+                <h3>Campo direccional 04</h3>
+                <img src="imagenes/4.png" alt="Gráfica del ejercicio 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="conclusion">
+        <h2>Conclusión</h2>
+
+        <p>
+            Los campos direccionales permiten comprender
+            visualmente el comportamiento de diferentes
+            ecuaciones diferenciales. Cada modelo representa
+            un fenómeno distinto y muestra cómo evolucionan
+            sus variables a través del tiempo o del espacio.
+        </p>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>ACTIVIDAD 2.2.2.1 | CAMPOS DIRECCIONALES</p>
+        <a href="#inicio">Volver al inicio ↑</a>
+    </footer>
+
+    <!-- Conexión con JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
